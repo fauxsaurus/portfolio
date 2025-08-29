@@ -508,12 +508,13 @@ body > footer {
 }
 
 /** @note Button */
-[data-social='github'] {
+.button.light {
 	--color-theme: #eee;
 	--color-text: #222;
 	--color-bottom: #0009;
 }
-[data-social='linkedin'] {
+
+.button.dark {
 	--color-theme: #555;
 	--color-text: #fff;
 	--color-bottom: #0009;
@@ -544,7 +545,7 @@ body > footer {
 }
 
 .button img {
-	height: 70%;
+	height: 1.5em;
 	vertical-align: center;
 }
 

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512">
+	<mask id="mask-envelope">
+		<path d="m0 0H512V512H0" fill="#fff"/>
+		<path stroke="#000" stroke-width="20" fill="none" d="M305 256 434 384M207 256 78 384m0-256L243 292c7 8 19 8 26 0L434 128"/>
+	</mask>
+	<rect width="356" height="256" x="78" y="128" fill="#000" rx="8%" mask="url(#mask-envelope)"/>
+</svg>
