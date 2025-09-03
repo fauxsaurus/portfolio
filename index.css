@@ -16,14 +16,18 @@ body {
 	--width-text-length: min(40rem, 100%);
 	--width-section: min(73rem, 100%); /* img+text widths + gap*/
 
+	background: var(--color-bg);
+
+	margin: 0 auto;
+	padding: 0;
+}
+
+main {
 	align-items: center;
-	background: #fff;
 	display: flex;
 	font-family: Arial, Helvetica, sans-serif;
 	flex-direction: column;
 	gap: var(--gap);
-	margin: 0 auto;
-	padding: 0;
 }
 
 ::selection {
