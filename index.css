@@ -493,9 +493,10 @@ figure {
 	}
 }
 [data-shape='hardback'] {
-	display: inline-block;
 	position: relative;
 	margin: 0 auto;
+	margin-bottom: 1rem;
+	width: 25ch;
 
 	&::before {
 		background: linear-gradient(
@@ -521,7 +522,6 @@ figure {
 		border-radius: 0.25rem;
 		display: block;
 		height: auto;
-		width: 30ch;
 	}
 }
 [data-overlapping='tv-monitor'] {
