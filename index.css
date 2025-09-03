@@ -37,16 +37,15 @@ p {
 	margin-top: 0;
 }
 
-p,
-li {
+p {
 	max-width: var(--width-text-length);
-	line-height: 110%;
+	line-height: 135%;
+	font-size: 1.1rem;
 }
 
 /* REUSEABLE-ELEMENTS */
-
 section:not(.hero) {
-	/* align-items: center; */
+	align-items: center;
 	box-sizing: border-box;
 	display: flex;
 	flex-wrap: wrap;
@@ -164,7 +163,6 @@ section:not(.hero) {
 
 figure {
 	aspect-ratio: 3 / 2;
-	/* background: red; */
 	box-sizing: border-box;
 	margin: 0;
 	position: relative;
@@ -583,7 +581,6 @@ figure {
 }
 
 body > footer {
-	align-items: center;
 	background-color: var(--color-black);
 	color: var(--color-white);
 	display: flex;
@@ -594,4 +591,5 @@ body > footer {
 	justify-content: center;
 	padding: var(--gap);
 	padding-top: calc(var(--gap) * 1.5);
+	text-align: center;
 }
