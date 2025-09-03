@@ -230,11 +230,13 @@ figure {
 
 /* <SPECIFIC-ELEMENTS/SHAPES> */
 [data-shape='tv'] {
-	--border: 0.75ch;
+	--base-unit: min(40ch, 75vw);
+	--border: calc(var(--base-unit) * 0.01875);
 
 	border: var(--border) solid #000;
 	border-radius: var(--border);
 	box-shadow: 0 0 var(--border) #000;
+	display: inline-block;
 	position: relative;
 	margin-bottom: calc(var(--border) * 2);
 	margin-left: calc(var(--border) * 4.75);
@@ -272,12 +274,12 @@ figure {
 	}
 
 	img:first-child {
-		width: 40ch;
+		width: var(--base-unit);
 	}
 }
 
 [data-shape='ipod'] {
-	--base-unit: 25ch;
+	--base-unit: min(25ch, 46.875vw);
 	--border: calc(var(--base-unit) / 7.5);
 
 	aspect-ratio: 3 / 2;
@@ -363,7 +365,7 @@ figure {
 	/** @todo add buttons */
 }
 [data-shape='ipad'] {
-	--base-unit: 40ch;
+	--base-unit: min(40ch, 75vw);
 	--border: calc(var(--base-unit) / 15);
 
 	aspect-ratio: 4 / 3;
@@ -414,7 +416,7 @@ figure {
 	}
 }
 [data-shape='laptop'] {
-	--base-unit: 40ch;
+	--base-unit: min(40ch, 75vw);
 	--border: calc(var(--base-unit) / 20);
 
 	background-color: black;
@@ -455,7 +457,7 @@ figure {
 	}
 }
 [data-shape='monitor'] {
-	--base-unit: 30ch;
+	--base-unit: min(30ch, 56.25vw);
 	--border: calc(var(--base-unit) / 40);
 
 	aspect-ratio: 16 / 9;
@@ -526,12 +528,22 @@ figure {
 [data-overlapping='tv-monitor'] {
 	aspect-ratio: 4 / 3;
 
+	[data-shape='tv'] {
+		/* @note compensating for the added height from the overlapping monitor */
+		margin-bottom: calc(var(--border) * 12);
+	}
+
 	[data-shape='monitor'] {
 		bottom: 5%;
 	}
 }
 [data-overlapping='ipad-ipod'] {
 	aspect-ratio: 4 / 3;
+
+	/* @note compensating for the added height from the ipod */
+	[data-shape='ipad'] {
+		margin-bottom: 1.5ch;
+	}
 
 	[data-shape='ipod'] {
 		bottom: 7.5%;
