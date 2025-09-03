@@ -240,6 +240,7 @@ figure {
 	margin-bottom: calc(var(--border) * 2);
 	margin-left: calc(var(--border) * 4.75);
 	margin-top: calc(var(--border) * 4.75);
+	width: var(--base-unit);
 
 	&::before {
 		background: #000;
@@ -270,10 +271,6 @@ figure {
 		transform: rotate(-30deg);
 		width: calc(var(--border) * 1.25);
 		z-index: -1;
-	}
-
-	img:first-child {
-		width: var(--base-unit);
 	}
 }
 
@@ -566,7 +563,8 @@ figure {
 		display: flex;
 		flex-direction: column;
 		gap: var(--gap);
-		padding: 0 var(--gap);
+		justify-content: center;
+		padding: var(--gap);
 		width: var(--width-text-length);
 	}
 }
