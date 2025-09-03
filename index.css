@@ -7,7 +7,7 @@ body {
 	--font-default: 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial,
 		'Lucida Grande', sans-serif;
 
-	--width-headshot: 25rem;
+	--width-headshot: 30rem;
 	--width-image-length: min(30rem, 100%);
 	--width-text-length: min(40rem, 100%);
 	--width-section: min(73rem, 100%); /* img+text widths + gap*/
@@ -67,6 +67,7 @@ section:not(.hero) {
 		display: flex;
 		gap: var(--gap);
 		flex-direction: column;
+		justify-content: center;
 		width: var(--width-text-length);
 	}
 
@@ -218,8 +219,8 @@ figure {
 	aspect-ratio: 1/1;
 	aspect-ratio: 4 / 3;
 	background-image: url('./img/2025-headshot.png');
-	background-size: 80%;
-	background-position: center;
+	background-size: 75%;
+	background-position: center bottom;
 	background-repeat: no-repeat;
 	display: block;
 	filter: drop-shadow(0 -0.25rem 0.5rem #0003);
@@ -570,13 +571,10 @@ figure {
 	}
 }
 
-/** @note 40rem (text width) + 25rem (headshot width) */
-@media (max-width: 69rem) {
+/** @note 40rem (text width) + 30rem (headshot width) */
+@media (max-width: 55rem) {
 	.hero h1 {
 		text-align: center;
-	}
-	.hero {
-		padding-bottom: var(--gap);
 	}
 }
 
