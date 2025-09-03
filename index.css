@@ -22,6 +22,11 @@ body {
 	padding: 0;
 }
 
+::selection {
+	background: var(--color-black);
+	color: var(--color-white);
+}
+
 h1,
 h2,
 p {
@@ -595,4 +600,9 @@ body > footer {
 	padding: var(--gap);
 	padding-top: calc(var(--gap) * 1.5);
 	text-align: center;
+
+	::selection {
+		background: var(--color-white);
+		color: var(--color-black);
+	}
 }
