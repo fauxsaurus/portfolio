@@ -37,10 +37,17 @@ p {
 	margin-top: 0;
 }
 
+li,
 p {
 	max-width: var(--width-text-length);
 	line-height: 135%;
 	font-size: 1.1rem;
+}
+
+ul {
+	padding-inline-start: var(--gap);
+	margin-block-start: 0;
+	margin-block-end: 0;
 }
 
 /* REUSEABLE-ELEMENTS */
