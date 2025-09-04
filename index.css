@@ -492,7 +492,7 @@ figure {
 	border-bottom-width: calc(var(--border) * 2);
 	border-radius: calc(var(--base-unit) * 0.01);
 	box-shadow: 0 0 calc(var(--border) / 4) #000;
-	margin-bottom: calc(var(--base-unit) * 0.15);
+	margin-bottom: calc(var(--base-unit) * 0.175);
 	position: relative;
 	width: var(--base-unit);
 
